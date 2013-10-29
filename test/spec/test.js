@@ -137,7 +137,7 @@
 		// || for the case of en Passant where piece that is captured does not have position MIA
 		var capturedPiece = collection.capturedPieces.findWhere({'position': 'MIA'}) || collection.capturedPieces.findWhere({'position': pawnSquare})
 
-		expect(piece).to.equal(undefined)
+		expect(false).to.equal(true)
 		expect(capturedPiece).to.not.equal(undefined)
 	}
 
